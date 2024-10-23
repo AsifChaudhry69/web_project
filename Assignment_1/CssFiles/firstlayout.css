@@ -56,7 +56,7 @@
 }
 .thirdblock{
     position: relative;
-    background-color:  #0092D4;;
+    background-color:  #619dd1;
     height: 80vh;
 }
 .thirdblock h1{
@@ -98,6 +98,8 @@
 .milk{
    
     position: absolute;
+    /* justify-content: center;
+    align-items: center; */
     left: 11%;
     top: 27%;
 

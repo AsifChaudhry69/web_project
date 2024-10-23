@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Layout</title>
+    <style>
+        .brandname h1 {
+            font-size: xx-large;
+        }
+        .figure img {
+            width: 1540px;
+            height: auto;
+        }
+        .thirdblock {
+            background-color: #0092D4;
+            height: 80vh;
+            color: white;
+            text-align: center;
+        }
+        .brands img {
+            width: 15%;
+            height: auto;
+            margin: 1%;
+            background-color: white;
+        }
+        .forthblock, .fifthblock {
+            background-color: white;
+            padding: 50px 0;
+        }
+        .milk img {
+            width: 15%;
+            height: auto;
+            margin: 10px;
+        }
+        .bt {
+            color: black;
+            height: 40px;
+            width: 140px;
+            border-radius: 70px;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: bisque;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h1>HALEEB</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BRANDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <button class="btn btn-dark rounded-pill">ORDER NOW</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Image -->
+    <figure class="figure">
+        <img src="../Images/cover.png" class="img-fluid" alt="Images">
+    </figure>
+
+    <!-- Our Brands -->
+    <section class="thirdblock">
+        <h1>Our Brands</h1>
+        <div class="d-flex justify-content-center flex-wrap brands">
+            <img src="../Images/brand-1.png" alt="Image1">
+            <img src="../Images/brand-2.png" alt="Image2">
+            <img src="../Images/brand-3.png" alt="Image3">
+            <img src="../Images/brand-4.png" alt="Image4">
+            <img src="../Images/brand-5.png" alt="Image5">
+            <img src="../Images/brand-6.png" alt="Image6">
+            <img src="../Images/brand-7.png" alt="Image7">
+            <img src="../Images/brand-8.png" alt="Image8">
+            <img src="../Images/brand-9.png" alt="Image9">
+            <img src="../Images/brand-10.png" alt="Image10">
+        </div>
+    </section>
+
+    <!-- Our Milk Story -->
+    <section class="forthblock text-center">
+        <h1>Our Milk Story</h1>
+        <div class="d-flex justify-content-center flex-wrap milk">
+            <img src="../Images/Milk-Collection.jpg" alt="Image1">
+            <img src="../Images/Lab-Testing.jpg" alt="Image2">
+            <img src="../Images/Pasteurization.jpg" alt="Image3">
+            <img src="../Images/UHT-Treatment.jpg" alt="Image4">
+            <img src="../Images/Aseptic Storage.jpg" alt="Image5">
+            <img src="../Images/Packaging.jpg" alt="Image6">
+            <img src="../Images/Distribution.jpg" alt="Image7">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="fifthblock">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        ABOUT US <br> <br> About HF<br>Contact Us<br>Cookies Policy<br>Environmental & Privacy Policy<br>Health and Safety Policy
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        PARTNER WITH HFL<br>
+                        Get in touch with our team for queries regarding export, distribution or retail.
+                    </p>
+                    <button class="btn btn-dark rounded-pill bt">MESSAGE NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
