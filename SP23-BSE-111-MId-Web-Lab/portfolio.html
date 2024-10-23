@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Document</title>
+</head>
+    
+
+<body>
+
+    
+     <div class="name-bar">
+        Asif Chaudhary - My Four Semesters' Projects Portfolio
+    </div>
+    <div class="container">
+        <div class="leftcontent">
+            <h1>My Portfolio</h1>
+            <p>In my portfolio, I worked on various projects that spanned Object-Oriented Programming (OOP), Data
+                Structures and Algorithms (DSA), and Web Development. OOP helped me design modular, reusable code
+                through concepts like inheritance, polymorphism, and encapsulation. I applied these principles while
+                implementing efficient algorithms in DSA, working with data structures like arrays, linked lists, and
+                trees, and optimizing solutions with sorting and searching techniques. My web development experience
+                included creating dynamic and responsive websites using HTML, CSS, and JavaScript, while integrating
+                server-side scripting and databases. These skills allowed me to build full-stack applications, combining
+                theoretical knowledge with practical coding.</p>
+        </div>
+        <div class="rightcontent">
+            <div class="box" id="box1" style="background-image: url(myself.jpg);">ASIF CHAUDHARY</div>
+            <div class="box" id="box2" style="background-image: url(group_2.jpg);">OUR GROUP</div>
+            <div class="box" id="box3" style="background-image: url(cafe_pic_1.jpg);">CAFATERIA</div>
+            <div class="box" id="box4" style="background-image: url(project_pic.jpeg);">TECHNOLOGIES</div>
+            <div class="box" id="box5" style="background-image: url(project_2.jpeg);">DEVELOPEMENT</div>
+            <div class="box" id="box6" style="background-image: url(uni_pic_2.jpeg);">COMSATS</div>
+            <div class="box" id="box7" style="background-image: url(Dep.jpg);">DEPARTEMENT</div>
+
+        </div>
+
+    </div>
+
+    <!-- Four images with buttons below -->
+    <div class="image-grid">
+        <!-- Image 1 and button -->
+        <div>
+            <img src="PF.jpeg" alt="Image 1">
+            <div class="button-container">
+                <button  onclick="showSemester(1)">Semester 1</button>
+            </div>
+        </div>
+
+        <!-- Image 2 and button -->
+        <div>
+            <img src="oop.png" alt="Image 2">
+            <div class="button-container">
+                <button  onclick="showSemester(2)">Semester 2</button>
+            </div>
+        </div>
+
+        <!-- Image 3 and button -->
+        <div>
+            <img src="DSA.jpeg" alt="Image 3">
+            <div class="button-container">
+                <button  onclick="showSemester(3)">Semester 3</button>
+            </div>
+        </div>
+
+        <!-- Image 4 and button -->
+        <div>
+            <img src="web.jpeg" alt="Image 4">
+            <div class="button-container">
+                <button onclick="showSemester(4)">Semester 4</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Content display area -->
+     <div id="content"></div>
+     
+    <footer>
+        <p>Asif Chaudhary | Bachelor's in Computer Science | COMSATS University</p>
+    </footer>
+
+     <!-- Content display area -->
+     <div id="content"></div>
+
+     <script>
+         function showSemester(semester) {
+             // Get the content div
+             var contentDiv = document.getElementById("content");
+ 
+             // Clear previous content
+             contentDiv.innerHTML = '';
+ 
+             // Use if statements to determine which semester's content to display
+             if (semester === 1) {
+                 contentDiv.innerHTML = "<h3>Semester 1 Overview</h3><p>In Semester 1, I focused on the basics of programming, problem-solving, and foundational concepts of computer science. Key subjects included Introduction to Programming and Discrete Mathematics.</p>";
+             } else if (semester === 2) {
+                 contentDiv.innerHTML = "<h3>Semester 2 Overview</h3><p>Semester 2 introduced Object-Oriented Programming (OOP) and algorithms. Projects during this time helped me understand classes, inheritance, and polymorphism, along with some data structures.</p>";
+             } else if (semester === 3) {
+                 contentDiv.innerHTML = "<h3>Semester 3 Overview</h3><p>In Semester 3, Data Structures and Algorithms (DSA) took the forefront. I learned about linked lists, trees, graphs, and their implementation in solving complex problems efficiently.</p>";
+             } else if (semester === 4) {
+                 contentDiv.innerHTML = "<h3>Semester 4 Overview</h3><p>Semester 4 was all about web development. I learned to create full-stack web applications using technologies like HTML, CSS, JavaScript, PHP, and MySQL.</p>";
+             }
+ 
+             // Display the content div
+             contentDiv.style.display = 'block';
+         }
+     </script>
+ 
+
+</body>
+
+
+</html>
